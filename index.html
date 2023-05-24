@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bookMarker</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+		<div class="container mt-5 main-color ">
+			<h3>Bookmarker</h3>
+            <hr>
+		</div>
+	</header>
+	<div class="container main-bg-color text-center py-3">
+		<div class="content">
+			<div class="inner">
+				<h2 class="pt-4">Bookmark your favorite sites </h2>
+				<p class="fw-bold">Site Name</p>
+
+				<input id="siteName" class="form-control w-75 m-auto" placeholder="Bookmark Name" type="text" required />
+
+				<div id="nameAlert" class="alert alert-danger p-2 my-2 w-75 m-auto d-none ">Please enter valid name.....</div>
+
+
+				<p class="fw-bold">Site URL</p>
+
+				<input id="siteUrl"  class="form-control w-75 m-auto" placeholder="website URL https:/" type="text" required />
+
+				<div id="urlAlert" class="alert alert-danger p-2 my-2  m-auto w-75 d-none ">Site url must start with https:/www.name</div>
+				
+
+
+				<div class="m-auto my-3">
+						<button id="submitBtn" disabled class="btn btn-primary">Submit</button>
+				</div>
+                <input type="text" class="form-control my-3 w-75 m-auto"  id="searchInput" placeholder="search....">
+			</div>
+		</div>
+	</div>
+	<table class="table container my-3   main-bg-color ">
+        <tbody id="tBody">
+           
+        </tbody>
+    </table> 
+	<footer class="container">
+        <hr>
+		<div >
+			<p class="main-color">&copy; 2019 Bookmarker Inc.</p>
+		</div>
+	</footer>
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
